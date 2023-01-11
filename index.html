@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rome - AI Rep Counter</title>
+    <link rel="stylesheet" href="app.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d/control_utils_3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer="true" src="./script.js"></script>
+  </head>
+  <body>
+    <h1>ROME - AI Rep Counter</h1>
+    <div class="main_interface_container">
+      <div class="details">
+        <h3>shoulder raises</h3>
+        <div class="mode">
+          <p><strong>100 reps </strong> / endless mode</p>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="reps">
+          <div class="left">
+            <div class="l_reps repcount">100</div>
+            <div class="reps_label">reps (L)</div>
+          </div>
+          <div class="right">
+            <div class="r_reps repcount">100</div>
+            <div class="reps_label">reps (R)</div>
+          </div>
+        </div>
+        <div class="timer_div">
+          <div class="timer">00:00</div>
+          <div class="pause">◼</div>
+        </div>
+      </div>
+      <div class="cam_container">
+        <video class="input_video hide"></video>
+        <!-- <p class="loading_placeholder">loading calibrated video output...</p> -->
+        <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+      </div>
+    </div>
+
+    <!-- <div id="video-container">
+      <video id="video" width="400" height="300" autoplay></video>
+      <canvas id="canvas" width="400" height="300"></canvas>
+    </div>
+    <div id="controls">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div id="rep-counter-container">
+      <p>Reps: <span id="rep-counter">0</span></p>
+
+    </div> -->
+  </body>
+</html>
